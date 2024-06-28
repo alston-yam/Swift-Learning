@@ -17,4 +17,11 @@ func checkPassword(_ password: String) throws -> String {
     }
 }
 
-print(try checkPassword("12345"))
+let str = "12"
+
+do {
+    let result = try checkPassword(str)
+    print(result)
+} catch {
+    print("There was an error.")
+}
